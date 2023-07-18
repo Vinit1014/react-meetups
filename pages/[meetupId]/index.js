@@ -43,7 +43,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   // fetch data for a single meetup
-
+  
   const meetupId = context.params.meetupId;
 
   const client = await MongoClient.connect(
